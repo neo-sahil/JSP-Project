@@ -127,6 +127,23 @@ public class EmpDao {
 		}
 		return status;
 	}
+	public static int delete(String email)
+	{
+		int status = 0;
+		String query = "delete from empp where email="+email;
+		try 
+		{
+			Connection con = EmpDao.getConnection();
+			PreparedStatement ps = con.prepareStatement(query);
+			status=ps.executeUpdate();
+		} 
+		catch (SQLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+		return status;
+	}
 }
 
-// sahil sharma
+
