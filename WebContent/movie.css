@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+
+    background-image: linear-gradient(rgba(114, 110, 110, 0),rgba(0,0,0,0.5)), url(images/1.jpg);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#container{
+    min-height: 100%;
+}
+#main{
+    overflow: auto;
+    padding-bottom: 15px;
+}
+
+#footer{
+    background-color: rgba(54, 52, 52, 0.692);
+    color:white;
+    position: relative;
+    height: 150px;
+    margin-top: -15px;
+    text-align: center;
+    clear: both;
+}
+/* this is for logo in header.jap*/
+#logo{
+    -webkit-backface-visibility: hidden;
+}
+#logo img{
+    width:80px;
+    height:auto;
+    margin-top: 5px;
+    margin-left: 25px;
+    float: left;
+    clear: left;
+}
+/*this is for list int header.jsp*/
+
+#menu{
+    float: right;
+    margin-top: 25px;
+    margin-right: 20px;
+    clear:right;
+}
+
+.list a{
+    text-decoration-line: none;
+    color: white;
+    padding: 5px 15px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    margin: 4px;
+    transition: 0.6s ease;
+    box-shadow: 2px 2px 1px 1px rgb(102, 5, 70);
+}
+
+.list a:hover{
+    background-color: white;
+    color: black;
+}
+.list li{
+    display: inline-block;
+}
+
+.list li.active a{
+    background-color: white;
+    color: black;
+}   
+/*this is for title in home.jsp*/
+.title{
+   margin-top: 15%;
+   margin-left: 25%;
+}    
+   
+.title h1{
+    color: rgb(248, 188, 188);
+    font-size: 70px;
+    font-family: cursive;
+    text-shadow: 2px 2px 5px rgb(17, 0, 250);
+}
+/* This is for tagline in home.html*/
+
+.tagline{
+    margin-top: -1em;
+    margin-left: 55%;
+}
+.tagline h4{
+    color: whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*this is for the buttons in home.jsp*/
+.button{
+    text-align: center;
+	 margin-top: 3%;
+    margin-left: 3%;
+}
+
+.btn{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+.btn:hover{
+    background-color:violet;
+    color: black;
+}
+/*this is for about.jsp*/
+.aboud-head{
+	margin-top: 13%;
+   margin-left: 30%;
+   margin-right: 30%;
+   text-align: center   ;
+   border-bottom: double;
+   border-color: blueviolet;
+}
+.aboud-head h3{
+    font-size: 50px;
+    color: rgb(248, 188, 188);
+    font-family: cursive;
+    text-shadow: 2px 2px 5px rgb(17, 0, 250);
+}
+.aboud{
+    text-align: center;
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.aboud p{
+    color: white;
+}
+
+/* this is for signup.jsp*/
+#form{
+	margin-top: 10%;
+    margin-left: 25%;
+    width: 50%;
+    color: white;
+    
+}
+#form fieldset{
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 2em;
+    padding-right: 0.75em;
+    border: 2px groove #f3b5f5;
+}
+
+#form input{
+    background-color: rgb(247, 185, 247);
+    border-radius: 5px;
+    font-style: italic;
+}
+#form td{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+}
+.btnn{
+    border-radius: 1px;
+    transition: 0.6s ease;
+    margin-right: 10px;
+}
+#contect{
+	margin-top: 13%;
+   margin-left: 30%;
+   margin-right: 30%;
+   text-align: center;
+}
+#contect h3{
+	font-size: 50px;
+    color: rgb(248, 188, 188);
+    font-family: cursive;
+    text-shadow: 2px 2px 5px rgb(17, 0, 250);
+}
+#contect p{
+	font-size: 20px;
+    color: rgb(212, 247, 15);
+    font-family: cursive;
+    text-shadow: 2px 2px 5px rgb(214, 19, 204);
+}
