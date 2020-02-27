@@ -79,10 +79,18 @@ html, body{
    margin-top: 15%;
    margin-left: 25%;
 }    
-   
+.title-signup2{
+   margin-top: 13%;
+   margin-left: 43%;
+}  
 .title h1{
     color: rgb(248, 188, 188);
     font-size: 70px;
+    font-family: cursive;
+    text-shadow: 2px 2px 5px rgb(17, 0, 250);
+}
+.title-signup2 h4{
+    color: rgb(248, 188, 188);
     font-family: cursive;
     text-shadow: 2px 2px 5px rgb(17, 0, 250);
 }
@@ -99,6 +107,11 @@ html, body{
 
 /*this is for the buttons in home.jsp*/
 .button{
+    text-align: center;
+	 margin-top: 3%;
+    margin-left: 3%;
+}
+.button-signup2{
     text-align: center;
 	 margin-top: 3%;
     margin-left: 3%;

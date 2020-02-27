@@ -24,7 +24,7 @@ public class EmpDao {
 	{
 		Connection con = EmpDao.getConnection();
 		String query = "insert into empp(firstname, surname, mobile, email, password1, gender)"
-				+ "values(?,?,?,?,?,?,?)";
+				+ "values(?,?,?,?,?,?)";
 		int status = 0;
 		try 
 		{
@@ -32,9 +32,9 @@ public class EmpDao {
 			ps.setString(1, e.getFirstname());
 			ps.setString(2, e.getSurname());
 			ps.setString(3, e.getMobile());
-			ps.setString(5, e.getEmail());
-			ps.setString(6, e.getPassword1());
-			ps.setString(7, e.getGender());
+			ps.setString(4, e.getEmail());
+			ps.setString(5, e.getPassword1());
+			ps.setString(6, e.getGender());
 			
 			status=ps.executeUpdate();
 			
@@ -59,12 +59,12 @@ public class EmpDao {
 			while(rs.next())
 			{
 				Emp e = new Emp();
-				e.setFirstname(rs.getString(1));
-				e.setSurname(rs.getString(2));
-				e.setMobile(rs.getString(3));
-				e.setEmail(rs.getString(4));
-				e.setPassword1(rs.getString(5));
-				e.setGender(rs.getString(6));
+				e.setFirstname(rs.getString(2));
+				e.setSurname(rs.getString(3));
+				e.setMobile(rs.getString(4));
+				e.setEmail(rs.getString(5));
+				e.setPassword1(rs.getString(6));
+				e.setGender(rs.getString(7));
 				
 				list.add(e);
 			}
@@ -89,12 +89,12 @@ public class EmpDao {
 			PreparedStatement ps = con.prepareStatement(query);
 			ResultSet rs = ps.executeQuery();
 			rs.next();
-			e.setFirstname(rs.getString(1));
-			e.setSurname(rs.getString(2));
-			e.setMobile(rs.getString(3));
-			e.setEmail(rs.getString(4));
-			e.setPassword1(rs.getString(5));
-			e.setGender(rs.getString(6));
+			e.setFirstname(rs.getString(2));
+			e.setSurname(rs.getString(3));
+			e.setMobile(rs.getString(4));
+			e.setEmail(rs.getString(5));
+			e.setPassword1(rs.getString(6));
+			e.setGender(rs.getString(7));
 		} 
 		catch (SQLException e1) {
 			e1.printStackTrace();

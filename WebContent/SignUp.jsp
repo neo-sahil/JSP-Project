@@ -12,7 +12,7 @@
         <div id="main">
         	<jsp:include page="header.jsp"></jsp:include>
         	<div id="form">
-                <form action="" method="POST">
+                <form action="SignUpServlet" method="POST">
                      <fieldset>
                          <legend>Enter details:</legend>
                          <table>
