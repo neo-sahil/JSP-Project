@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>SignUp</title>
 <link rel="stylesheet" type="text/css" href="movie.css"/>
 </head>
 <body>
