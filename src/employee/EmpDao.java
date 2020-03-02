@@ -144,6 +144,34 @@ public class EmpDao {
 		
 		return status;
 	}
+	public static Emp check(String email, String password1)
+	{
+		String query = "select * from empp where email=? and password1=?";
+		Emp e = new Emp();
+		try 
+		{
+			Connection con = EmpDao.getConnection();
+			PreparedStatement ps = con.prepareStatement(query);
+			ps.setString(1, email);
+			ps.setString(2, password1);
+			ResultSet rs=ps.executeQuery();
+			if(rs.next())
+			{
+				e.setFirstname(rs.getString(2));
+				e.setSurname(rs.getString(3));
+				e.setMobile(rs.getString(4));
+				e.setEmail(rs.getString(5));
+				e.setPassword1(rs.getString(6));
+				e.setGender(rs.getString(7));
+			}
+			
+		} 
+		catch (SQLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		return e;
+	}
 }
 
 

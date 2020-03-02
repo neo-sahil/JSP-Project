@@ -33,13 +33,14 @@
                                 <td></td><td><input type="password" name="password2" placeholder="Conferm Password"/></td>
                             </tr>
                             <tr>
-                                <td>Gender:</td><td><input class="radio" type="radio" name="gender" id="male"/><label for="male">Male</label></td>
-                            </tr>
-                            <tr>
-                                <td></td><td><input class="radio" type="radio" name="gender" id="female"/><label for="female">Female</label></td>
-                            </tr>
-                            <tr>
-                                <td></td><td><input class="radio" type="radio" name="gender" id="other"/><label for="other">Other</label></td>
+                                <td>Gender:</td>
+                                <td>
+                      				<select name="gender" > 
+										<option>Male</option>
+										<option>Femail</option>
+										<option>Other</option>
+									</select>       	
+                                </td>
                             </tr>
                             <tr>
                                 <td></td><td><input class="btnn" type="submit" value="SignUp"/><input class="btnn" type="reset" value="Reset"/></td>

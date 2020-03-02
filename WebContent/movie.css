@@ -157,7 +157,7 @@ html, body{
 
 /* this is for signup.jsp*/
 #form{
-	margin-top: 10%;
+  	margin-top: 10%;
     margin-left: 25%;
     width: 50%;
     color: white;
@@ -175,7 +175,37 @@ html, body{
     border-radius: 5px;
     font-style: italic;
 }
+#form select{
+	background-color: rgb(247, 185, 247);
+    border-radius: 5px;
+    font-style: italic;
+}
 #form td{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+}
+#form-signin{
+  	margin-top: 10%;
+    margin-left: 25%;
+    width: 50%;
+    color: white;
+}
+#form-signin fieldset{
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 8em;
+    padding-right: 0.75em;
+    border: 2px groove #f3b5f5;
+}
+
+#form-signin input{
+    background-color: rgb(247, 185, 247);
+    border-radius: 5px;
+    font-style: italic;
+}
+#form-signin td{
     color: white;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
