@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+<<<<<<< HEAD
 /**
  * Servlet implementation class LogOut
  */
@@ -20,10 +21,25 @@ public class LogOut extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		
 
+=======
+
+@WebServlet("/LogOut")
+public class LogOut extends HttpServlet {
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		PrintWriter out = response.getWriter();
+		response.setContentType("text/html");
+		
+>>>>>>> working
 		HttpSession session = request.getSession();
 		session.removeAttribute("firstname");
 		session.invalidate();
 		response.sendRedirect("SignIn.jsp");
+<<<<<<< HEAD
+=======
+		
+>>>>>>> working
 	}
 
 }

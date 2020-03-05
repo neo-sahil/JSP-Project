@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Hrithik's Movies</title>
-
+<link rel="stylesheet" type="text/css" href="movie.css"/>
 </head>
 <body>
 	<div id="container">

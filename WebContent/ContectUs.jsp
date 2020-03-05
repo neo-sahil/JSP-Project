@@ -8,6 +8,7 @@
 <link rel="stylesheet" type="text/css" href="movie.css"/>
 </head>
 <body>
+<<<<<<< HEAD
 
 <%
 	response.setHeader("Cache-Control","no-cache, no-store, must-revalidate");// for HTTP 1.1
@@ -21,6 +22,19 @@
 	}
 %>
 
+=======
+	<%
+		response.setHeader("Cache-Control","no-cache, no-store, must-revalidate");// for HTTP 1.1
+		
+		response.setHeader("Pragma", "no-cache");//for HTTP 1.0
+				
+		response.setHeader("Expires", "0");//for proxy
+		if(session.getAttribute("firstname")==null)
+		{
+			response.sendRedirect("SignIn.jsp");
+		}
+	%>
+>>>>>>> working
 	<div id="container">
         <div id="main">
 			<jsp:include page="header.jsp"></jsp:include>

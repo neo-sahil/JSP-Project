@@ -8,6 +8,12 @@
 <link rel="stylesheet" type="text/css" href="movie.css"/>
 </head>
 <body>
+<%
+	if(session.getAttribute("firstname")!=null)
+	{
+		response.sendRedirect("Profile.jsp");
+	}
+%>
     <div id="container">
         <div id="main">
         	<jsp:include page="header.jsp"></jsp:include>
