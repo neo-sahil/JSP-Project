@@ -21,5 +21,20 @@
                 </ul>
             </div>
         </div>
+        <div id="emp">
+        	<%
+	        	response.setHeader("Cache-Control","no-cache, no-store, must-revalidate");// for HTTP 1.1
+	    		
+	    		response.setHeader("Pragma", "no-cache");//for HTTP 1.0
+	    				
+	    		response.setHeader("Expires", "0");//for proxy
+        		if(!(session.getAttribute("firstname")==null))
+        		{
+        	%>
+            <a href="Profile.jsp"><%=session.getAttribute("firstname") %></a>
+            <%
+        		}
+            %>
+        </div>
 </body>
 </html>

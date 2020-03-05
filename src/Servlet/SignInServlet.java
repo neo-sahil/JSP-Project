@@ -28,13 +28,13 @@ public class SignInServlet extends HttpServlet {
 		Emp e = EmpDao.check(email, password1);
 		
 		String password2 = e.getPassword1();
-		System.out.println(e.getGender());
+		//System.out.println(e.getGender());
 		
 		if(password1.equals(password2))
 		{
 			HttpSession session = request.getSession();
 			session.setAttribute("firstname", e.getFirstname());
-			response.sendRedirect("yo.jsp");
+			response.sendRedirect("home.jsp");
 		}
 		else
 		{
